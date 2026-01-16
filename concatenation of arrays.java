@@ -10,4 +10,12 @@ class Solution {
         return ans;
         
     }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[] nums = {1, 2, 1};
+        int[] result = sol.getConcatenation(nums);
+        System.out.println("Input: " + java.util.Arrays.toString(nums));
+        System.out.println("Output: " + java.util.Arrays.toString(result));
+    }
 }

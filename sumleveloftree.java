@@ -1,7 +1,9 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-sumleveloftreeTreeNode left;
+class TreeNode {
+    int val;
+    TreeNode left;
     TreeNode right;
     TreeNode() {}
     TreeNode(int val) { this.val = val; }
@@ -51,16 +53,16 @@ class Solution {
 
         return maxLevel;
     }
-}
 
-   public static void main(String[] args) {
-    // Creating Example 1: [1, 7, 0, 7, -8]
-    TreeNode root = new TreeNode(1);
-    root.left = new TreeNode(7);
-    root.right = new TreeNode(0);
-    root.left.left = new TreeNode(7);
-    root.left.right = new TreeNode(-8);
+    public static void main(String[] args) {
+        // Creating Example 1: [1, 7, 0, 7, -8]
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(7);
+        root.right = new TreeNode(0);
+        root.left.left = new TreeNode(7);
+        root.left.right = new TreeNode(-8);
 
-    Solution sol = new Solution();
-    System.out.println("The level with the maximum sum is: " + sol.maxLevelSum(root));
+        Solution sol = new Solution();
+        System.out.println("The level with the maximum sum is: " + sol.maxLevelSum(root));
+    }
 }

@@ -39,4 +39,10 @@ class Solution {
         // The answer is in the bottom-right cell
         return dp[m][n];
     }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        String s1 = "sea", s2 = "eat";
+        System.out.println("Minimum delete sum: " + sol.minimumDeleteSum(s1, s2));
+    }
 }

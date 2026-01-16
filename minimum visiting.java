@@ -1,13 +1,3 @@
-import java.util.Arrays;
-
-public class VisitingPoints {
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        int[][] points = {{1, 1}, {3, 4}, {-1, 0}};
-        System.out.println("Minimum Time: " + sol.minTimeToVisitAllPoints(points));
-    }
-}
-
 class Solution {
     public int minTimeToVisitAllPoints(int[][] points) {
         int total = 0;
@@ -17,5 +7,11 @@ class Solution {
             total += Math.max(Math.abs(x2 - x1), Math.abs(y2 - y1));
         }
         return total;
+    }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[][] points = {{1, 1}, {3, 4}, {-1, 0}};
+        System.out.println("Minimum Time: " + sol.minTimeToVisitAllPoints(points));
     }
 }

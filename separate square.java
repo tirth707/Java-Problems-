@@ -45,4 +45,10 @@ class Solution {
         }
         return area;
     }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[][] squares = {{0,0,1},{2,2,1}};
+        System.out.println("Separate line: " + sol.separateSquares(squares));
+    }
 }

@@ -41,4 +41,15 @@ class Solution {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        char[][] matrix = {
+            {'1','0','1','0','0'},
+            {'1','0','1','1','1'},
+            {'1','1','1','1','1'},
+            {'1','0','0','1','0'}
+        };
+        System.out.println("Maximal rectangle area: " + sol.maximalRectangle(matrix));
+    }
 }

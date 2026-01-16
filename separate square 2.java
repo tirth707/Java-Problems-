@@ -15,10 +15,6 @@ class Solution {
         Map<Integer, Integer> xMap = new HashMap<>();
         for (int i = 0; i < ux.size(); i++) xMap.put(ux.get(i), i);
 
-        int n = ux.size();
-        int[] count = new int[4 * n];
-        double[] len = new double[4 * n];
-
         List<Integer> uy = new ArrayList<>(yCoords);
         List<double[]> slices = new ArrayList<>();
         double totalArea = 0;
@@ -86,5 +82,11 @@ class Solution {
             }
         }
         return area;
+    }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[][] squares = {{0,0,1},{2,2,1}};
+        System.out.println("Separate line: " + sol.separateSquares(squares));
     }
 }
